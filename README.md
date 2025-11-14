@@ -49,14 +49,27 @@ Then open:
 ```bash
 http://localhost:8501
 ```
-## Files
+## Features
 
-- backend/ — ingestion, embeddings, vectorstore, llm wrapper
+- Upload PDFs or TXT files
 
-- ui/ — Streamlit app
+- Automatic document chunking
 
-## Notes
+- Local embeddings (FAISS)
 
-- This repo uses local models. For best accuracy pick a high-quality 8B model you have resources for.
+- Query your knowledge base using local LLM
 
-- Tesseract OCR must be installed on your system for OCR (Linux: sudo apt install tesseract-ocr).
+- All processing happens offline, nothing leaves your machine
+
+- Privacy-focused design
+
+## Requirements
+
+- Python 3.10 or newer
+
+- Ollama installed locally
+
+- For PDF OCR:
+  - Windows → install Tesseract manually
+  - Linux → `sudo apt install tesseract-ocr`
+  - macOS → `brew install tesseract`
