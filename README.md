@@ -1,24 +1,53 @@
 # Privy — Local Personal Knowledge Assistant
 
-**Local-first** knowledge assistant using local LLMs + embeddings.
+A **local-first AI knowledge assistant** that lets you upload documents (PDF, TXT, notes) and turn them into a **searchable personal knowledge base.**
+All processing happens **on your device** using **local LLMs + local embeddings.**
 
-## Quick start (Linux / WSL / macOS)
+## Quick Start (Windows / macOS / Linux)
 
-1. Clone repo and create venv:
+## 1. Clone the repo
+```bash
+git clone https://github.com/<your-username>/Privy-Personal-Knowledge-Assistant-Local-AI
+cd Privy-Personal-Knowledge-Assistant-Local-AI
+```
+## 2. Create and activate virtual environment
+Windows (PowerShell)
 ```bash
 python -m venv .venv
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+.\.venv\Scripts\Activate.ps1
+```
+macOS / Linux
+```bash
+python3 -m venv .venv
 source .venv/bin/activate
+```
+## 3. Install Python dependencies
+```bash
 pip install -r requirements.txt
 ```
-2. Install Ollama and pull a model (example names; follow Ollama docs):
+
+## 4. Install Ollama (required)
+Download from:
+https://ollama.com/download
+
+After installation, restart the terminal and verify:
 ```bash
-# Install Ollama (official instructions: https://ollama.com/docs)
-ollama pull llama/8b   # or the exact model you want (LLaMA 3 8B if available)
+ollama --version
 ```
-3. Run Streamlit:
+## 5. Pull a local model
+Recommended:
+```bash
+ollama pull llama3:8b
+```
+You may replace with another model supported by your hardware.
+## 6. Run the app
 ```bash
 streamlit run ui/streamlit_app.py
-Open http://localhost:8501
+```
+Then open:
+```bash
+http://localhost:8501
 ```
 ## Files
 
