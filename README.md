@@ -98,6 +98,7 @@ If PowerShell still reports “command not found” after installing a tool:
 This forces a refresh of the system PATH.
 ### 3. `Fatal error in launcher: Unable to create process using ... streamlit.exe`
 Occurs when Streamlit was installed before the virtual environment existed or VS Code was opened in the wrong directory.
+
 **Fix:**
 ```bash
 pip install --force-reinstall streamlit
