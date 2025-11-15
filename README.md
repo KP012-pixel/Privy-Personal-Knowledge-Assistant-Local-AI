@@ -91,8 +91,11 @@ streamlit run ui/streamlit_app.py
 If PowerShell still reports “command not found” after installing a tool:
 
 **1.** Close the terminal
+
 **2.** Close IDE
+
 **3.** Reopen IDE
+
 **4.** Open a new PowerShell terminal
 
 This forces a refresh of the system PATH.
