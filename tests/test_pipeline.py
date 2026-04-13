@@ -1,4 +1,5 @@
 import tempfile
+
 from backend.ingestion import _smart_chunk
 
 def test_smart_chunk_simple():
