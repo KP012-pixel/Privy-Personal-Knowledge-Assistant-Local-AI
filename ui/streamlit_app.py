@@ -3,7 +3,7 @@ Streamlit app that supports:
 - Upload PDF/DOCX/TXT
 - Ingest and index to FAISS using sentence-transformers
 - Simple QA: embed query -> retrieve top chunks -> call local LLM (Ollama) for answer
-This is a simple demo-level front end for Privy.
+
 """
 import sys, os
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
