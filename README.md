@@ -3,6 +3,7 @@
 A **local-first AI knowledge assistant** that lets you upload documents (PDF, TXT, notes) and turn them into a **searchable personal knowledge base.**
 All processing happens **on your device** using **local LLMs + local embeddings.**
 
+
 ## Quick Start (Windows / macOS / Linux)
 
 ## 1. Clone the repo
