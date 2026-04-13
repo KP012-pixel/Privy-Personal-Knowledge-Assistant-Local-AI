@@ -1,7 +1,4 @@
-"""
-Embedding helper using sentence-transformers.
-Normalizes vectors for cosine similarity with FAISS IndexFlatIP.
-"""
+
 
 from sentence_transformers import SentenceTransformer
 import numpy as np
